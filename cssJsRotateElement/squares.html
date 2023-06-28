@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Element Rotation Tutorial</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh
+      }
+      .square-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .square {
+        position: absolute;
+        top: 75;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .square-1 {
+        background-color: magenta;
+      }
+      .square-2 {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div class="square-container square-2">
+      <div class="square square-1"></div>
+    </div>
+    <script src="./rotateSquares.js"/>
+  </body>
+
+</html>
